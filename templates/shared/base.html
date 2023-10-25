@@ -1,0 +1,20 @@
+{% load thumbnail %}
+{% load render_partial %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="fa" dir="rtl" class="h-full">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
+{% include 'shared/Hedear_refrences.html' %}
+<body
+        class="bg-slate-50 antialiased text-slate-600 mx-4 sm:mx-6 mb-4 dark:bg-[#131313] dark:text-slate-400 selection:bg-[#007bff] selection:text-white">
+<div class="max-w-7xl mx-auto">
+    {% render_partial 'subapp.views.header_component' %}
+    <div class="bg-white flex flex-col shadow-md rounded-3xl lg:flex-row dark:bg-zinc-900">
+        {% render_partial 'subapp.views.resume_cart' %}
+        {% render_partial 'subapp.views.Description_resume' %}
+    </div>
+    {% include 'shared/footer_refrences.html' %}
+</div>
+<script src="{% static '/js/main.js' %}" defer></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>رزومه من </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png"/>
+    <link rel="icon" sizes="192x192" href="/static/icons/android-chrome-192x192.png"/>
+    <link rel="icon" sizes="512x512" href="/static/icons/android-chrome-512x512.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png"/>
+    {#    <link rel="manifest" href="manifest.json"/>#}
+    <!-- <link rel="stylesheet" href="/static/css/main.min.css" /> -->
+    <!-- برای توسعه از استایل زیر استفاده کنید -->
+    <link rel="stylesheet" href="{% static '/css/main.css' %}"/>
+    <script>
+        if (localStorage.theme === "dark" || !"theme" in localStorage) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+    <style>
+        .frame {
+            width: 250px;
+            height: 250px;
+            border: 3px solid #ccc;
+            background: #eee;
+            margin: auto;
+            padding: 15px 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
